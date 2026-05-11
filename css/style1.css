@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    
+    --font-corp : roboto, sans-serif;
+    --font-titre : Poppins, sans-serif;
+
+    --color-principal:#F8F9FA;
+    --color-texte:#090b0c;
+    --color:#043c4d;
+    
+    --space:16px;
+}
+
+
+
+
+/* le corps */
+body{
+  font-family: var(--font-corp) ;
+  font-optical-sizing : auto ;
+  line-height: 1.6;
+  /* min-height: 100vh; */
+  font-style: normal ;
+  font-size: 17px;
+  color : var(--color-texte);
+}
+
+
+
+/* les titres du pages */
+h1,h2,h4,h5{
+    font-family: var(--font-titre);
+    font-style: var(--style);
+}
+
+
+
+
+
+/* section hero */
+.hero{
+     background-color: var(--color-principal); 
+    
+    padding: var(--space);
+    /* background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/1.jpeg);
+    height: 190vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    color: #090b0c;
+   
+}
+/* .hero img{
+    border-radius: 30% 70% / 50% 50%;
+} */
+#toute{
+    margin-top: 4em;
+}
+
+
+
+/* section marche */
+.marche{
+    background-color: var(--color-principal);
+    padding: var(--space);
+    
+}
+.marche h2{
+    text-align: center;
+}
+.marche h4{
+    color: var(--color);
+}
+
+
+/* sectio temoin */
+.temoin{
+    background-color: var(--color-principal);
+        padding: var(--space);
+}
+.temoin h2{
+    text-align: center;
+}
+
+
+/* section inscrits */
+.inscrit{
+    background-color: var(--color);
+    color: #ffffff;
+    padding: var(--space);
+    text-align: center;
+}
+
+/* section categories */
+.categories{
+    background-color: var(--color);
+    color:#ffffff;
+    padding: var(--space);
+}
+.categories h2{
+    text-align: center;
+}
+
+/* pied du page */
+footer{
+    padding: var(--space);
+    
+}
+footer img{
+    width: 98px;
+}
+
+
+
+/* liens */
+
+.collapse{
+    justify-content:flex-end;
+    
+}
+.nav-link{
+ color: #ffffff;
+}
+
+
+/* logo */
+#logo{
+    border-radius: 50%;
+   background-color: var(--color);
+   margin-left: 50px;
+}
+
+
+
+/* header */
+header{
+    /* position: sticky; */
+    top: 0;
+    margin: 10px;
+    /* margin-bottom: 8em; */
+
+
+}
+.btn{
+    background-color: #ffffff;
+    color: var(--color);
+}
+.container-fluid{
+    background-color: var(--color);
+}
+.navbar-toggler {
+    background-color: #ffffff;
+}
+
+
+
+/* formulaire */
+form{
+    background-color: var(--color-principal);
+    padding: 10px;
+    
+
+}
+.contact{
+    background-color: var(--color-principal);
+    color: var(--color);
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-top: 2.5em;
+    padding: 10px 0;
+}
+fieldset{
+    padding: var(--space);
+}
+
+
+
+/* localisation  */
+.iframe{
+    background-color:var( --color-principal) ;
+    color: #ffffff;
+    padding: 10px;
+}
+
+
+
+
+/* boutton de filtrage */
+
+.boutton{
+    background-color:var(--color-principal);
+    padding: 30px;
+    margin-top: 5em;
+    
+}
+.grille{
+    background-color: var(--color-principal);
+    color: #090b0c;
+}
+article{
+    padding: var(--space);
+}
+
+
+
+
+/* section histoir */
+
+.histoire{
+    background-color: var(--color-principal);
+    padding: var(--space);
+    
+}
+.histoire h2{
+    text-align: center;
+    padding: 10px;
+    color:var(--color);
+   margin-top: 3em;
+   margin-bottom: 30px;
+   
+    
+}
+
+
+
+
+/* section equipe */
+.equipe{
+    background-color: var(--color);
+    color: #ffffff;
+    padding: var(--space);
+}
+.equipe h2{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* sections valeurs */
+.valeurs{
+    background-color: var(--color-principal);
+    padding: var(--space);
+}
+.valeurs h2{
+    text-align: center;
+    color: var(--color);
+    padding: 10px;
+}
+.valeurs h3{
+    color: var(--color);
+}
+
+
+
+/* section chiffres cles */
+
+.chiffres{
+    background-color: var(--color);
+    padding: var(--space);
+    color: #ffffff;
+}
+.chiffres h2{
+    text-align: center;
+}
+
+
+
+/* section tarif */
+
+.tarifs{
+    background-color: var(--color-principal);
+    padding: var(--space);
+}
+.tarifs h1{
+    text-align: center;
+    color: var(--color);
+    margin-top: 2em;
+    margin-bottom: 30px;
+    
+}
+.prix{
+    color: var(--color);
+    
+}
+.liste{
+   list-style-type: none; 
+   
+}
+.bi-check-lg{
+    color: var(--color);
+    
+}
+
+
+
+
+/* section faq */
+.question{
+    background-color: var(--color);
+    
+    
+}
+.faq{
+    text-align: center;
+    color: #ffffff;
+}
+
+
