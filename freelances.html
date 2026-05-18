@@ -11,10 +11,15 @@ rel="stylesheet">
  <!-- Votre feuille de style personnelle -->
  <link rel="stylesheet" href="css/style1.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
  </head>
 <body> 
  <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <main>
+    <!-- navigation bootstrap -->
+        <nav class="navbar navbar-expand-lg  fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img id="logo" src="images/18.jpeg" alt="logo" width="70px"></a>
 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,24 +28,26 @@ rel="stylesheet">
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
        <li class="nav-item">
-                <a  class="nav-link active" aria-current="page" href="index.html">Acceuil</a></li>
+                <a  class="nav-link " aria-current="page" href="index.html">Acceuil</a></li>
                 <li class="nav-item">
-                <a class="nav-link active" href="freelances.html">Freelances</a></li>
+                <a class="nav-link " href="freelances.html">Freelances</a></li>
                 <li class="nav-item">
-                <a class="nav-link active" href="tarifs.html">Tarifs</a></li>
+                <a class="nav-link " href="tarifs.html">Tarifs</a></li>
                 <li class="nav-item">
-                <a  class="nav-link active"  href="about.html">A propos</a></li>
+                <a  class="nav-link "  href="about.html">A propos</a></li>
                 <li class="nav-item">
                 <li class="nav-item">
-                <a  class="nav-link active"  href="contact.html">Contact</a></li>
+                <a  class="nav-link "  href="contact.html">Contact</a></li>
         </ul>
+        <button type="button" class="btn btn-primary btn-lg">Rejoindre AfriTalent</button>
     </div>
 </div>
 </nav>
 </header>
+<main>
 <!-- Le contenu de la page sera ajoute ici -->
   <!-- barre de filtrage -->
-  <div>
+  <div class="boutton">
         <button>Tous</button>
         <button>Développement</button>
         <button>Design UI/UX</button>
@@ -52,7 +59,7 @@ rel="stylesheet">
         <button>Data Analyse</button>
     </div>
     <!-- grille de profil -->
-     <div>
+     <div class="grille">
     <article>
         <div>
             <img src="images/5.jpeg" alt="image">
@@ -243,6 +250,64 @@ rel="stylesheet">
         </div>
         </article>
         </div>
+          <!-- footer -->
+    <footer class="tor">
+        <div class="pied">
+       <div>
+        <img src="images/18.jpeg" alt="logo">
+        <p>Plateforme de freelance africain.</p>
+       </div>
+       <div>
+        <h4>Liens utiles</h4>
+        <ul>
+        <li><a href="index.html">Acceuil</a></li>
+        <li><a href="freelances.html">Freelances</a></li>
+        <li><a href="about.html">A propos</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        </ul>
+       </div>
+       <div>
+        <h4>Ressources</h4>
+        <aside>
+                <p>Guide freelance</p>
+                </aside>
+            <aside>
+                <p>FAQ</p>
+                </aside>
+            <aside>
+                <p>Support</p>
+                </aside>
+        </div>
+    <div>
+            <h4>Contact</h4>
+            <a href="contact.html">Contact@afriTalent</a>
+             <p><i class="fa-solid fa-phone fa-xs" style="color: rgb(232, 19, 19);"></i>Tél:+221 77 255 63 73</p>
+             <p><i class="fa-solid fa-map-pin fa-xs" style="color: rgb(232, 19, 19);"></i>Dakar,Sénégal</p>
+
+        </div>
+        <div>
+            <h3>Suivez-nous sur</h3>
+        <div class="icons">
+         <div>
+            <a href="https://instagram"><i class="fa-brands fa-instagram fa-2xl" style="color: rgb(17, 16, 17);"></i></a>
+            </div>
+        <div>
+            <a href="https://x-twitter.com"><i class="fa-brands fa-x-twitter fa-2xl" style="color: rgb(19, 18, 18);"></i></a>
+           </div>
+        <div>
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook fa-2xl" style="color: rgb(15, 14, 17);"></i></a>
+            </div>
+            </div>
+            </div>
+            </div>
+            <hr>
+            <div class="annee">
+                ©AfriTalent-copyright-AfriTalent
+            </div>
+            
+        </div>
+    </footer>
     
 
  <!-- Bootstrap 5 via CDN : script JavaScript -->
