@@ -46,6 +46,7 @@
                             <a class="nav-link " href="contact.html">Contact</a>
                         </li>
                     </ul>
+                    <button id="theme-toggle" class="btn btn-outline-light bg-transparent border-0" ><img id="darkmode" src="images/moon-regular (1).png" alt=""></button>
                     <button type="button" class="btn btn-primary btn-lg">Rejoindre AfriTalent</button>
                 </div>
             </div>
@@ -53,23 +54,22 @@
     </header>
     <main>
 
-        <!-- Le contenu de la page sera ajoute ici -->
-
-        <!-- formulaire -->
-
         <section class="sectionContact">
-            <div class="">
+
                 <div class="contact-form-wrapper p-4 p-md-5 shadow-sm ">
-                    <h2 class="mb-4   text-center titrecontact ">CONTACTEZ-NOUS</h2>
+                    <h2 class="mb-4  text-center titrecontact ">CONTACTEZ-NOUS</h2>
+                    <div class="page-contact">
 
                     <div id="success-message" class="alert alert-success p-3 mb-4 custom-success-box"
                         style="display:none;" role="alert">
                         <i class="bi bi-check-circle-fill me-2"></i>Message Envoyé avec succés.Nous vous répondrons dans
                         les plus bref délais.
                     </div>
-
+                    
+             <div class="col-12 col-md-10 col-lg-6 mx-auto">
+              
                     <form id="contactForm" novalidate>
-                        <div class="row g-3">
+                        <div class="row mb-3 g-3">
 
                             <div class="col-12 col-md-6">
                                 <label for="nom" class="form-label">Prenom</label>
@@ -125,12 +125,10 @@
                                     class="btn btn-afri-submit py-3 w-100 fw-bold text-uppercase">Envoyer</button>
                             </div>
                         </div>
+                        </div>
                     </form>
-                </div>
-            </div>
 
-
-            <div class="">
+<div class="col-12 col-lg-6">
                 <div class="contact-info-wrapper h-100 p-4 p-md-5 text-black shadow-sm rounded-3">
                     <h2 class="mb-4  titrecontact">Nos Coordonnées</h2>
 
@@ -143,23 +141,26 @@
                             <b>Adresse :</b> Saint-louis,Sénégal</p>
                     </div>
 
+                </div>
+                </div>
+            </div>
+            </div>
+          
+            
+            
+
+                
 
 
-                    <div class="map-responsive-container shadow-sm">
+            
+            <div class="map-responsive-container shadow-sm">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30871.730759906564!2d-17.48644109816561!3d14.714494861814329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfreelance%20dakar!5e0!3m2!1sfr!2ssn!4v1776552934403!5m2!1sfr!2ssn"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="100%" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                     </div>
-                </div>
-            </div>
-
-            </div>
         </section>
-
-
-
         <!-- footer -->
         <footer class="tor">
             <div class="pied">
@@ -218,8 +219,13 @@
             <div class="annee">
                 ©AfriTalent-copyright-AfriTalent
             </div>
+            <div>
+                                     <button id="back-to-top">
+  
+   <i class="fa-solid fa-arrow-up-long"></i>
+</button>
 
-            </div>
+            
         </footer>
 
         <!-- Bootstrap 5 via CDN : script JavaScript -->

@@ -16,6 +16,7 @@
     --space: 16px;
 }
 
+
 /* le corps */
 body {
     font-family: var(--font-corp);
@@ -26,6 +27,160 @@ body {
     font-size: 17px;
     color: var(--color-texte);
 }
+
+
+/* dark mode */
+
+
+body.dark{
+    background: #1e1e1e;
+    color: white    ;
+    --colorprimary:#2a90f0;
+    --secondcolor:black;
+
+}
+
+body.dark .navbar{
+    background: var(--colorprimary);
+    color: #181717;
+}
+body.dark .card{
+    background:var(--colorprimary);
+    color: white;
+}
+body.dark .categories{
+    background: var(--secondcolor);
+}
+
+body.dark .body{
+    background-color: #181717;
+}
+body.dark .histoire{
+    background:#1a1818;
+}
+body.dark .equipe{
+background:#1a1818;
+}
+body.dark .valeurs{
+    background:#1a1818;
+}
+body.dark .chiffres{
+    background:#1a1818;
+}
+body.dark .grille1{
+    background: var(--colorprimary);
+    color: white;
+}
+body.dark .grille2{
+    background: var(--colorprimary);
+    color: white;
+}
+body.dark .grille3{
+    background: var(--colorprimary);
+    color: white;
+}
+body.dark .grille4{
+    background: var(--colorprimary);
+    color: white;
+}
+body.dark .grille5{
+    background:var(--colorprimary);
+    color: white;
+}
+body.dark .pied a{
+    color: white;
+}
+body.dark .marche{
+    background: var(--secondcolor);
+    color: white;
+}
+body.dark .CTA{
+    background: var(--secondcolor);
+    color: white;
+}
+body.dark .hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/60.jpeg);
+    height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+body.dark .grille{
+    background: #1a1818;
+}
+body.dark .tor{
+    background: var(--secondcolor);
+
+}
+body.dark .tarifs{
+    background: #1a1818;
+}
+body.dark .pied-de-page{
+    background: #1a1818;
+}
+body.dark .question{
+    background: var(--secondcolor);
+    
+}
+body.dark .navbar{
+    background: var(--secondcolor);
+    color: white;
+}
+body.dark .pied{
+    color: white;
+}
+body.dark .prix{
+    color: white;
+}body.dark .contact-details-list{
+    color: white;
+}
+/* navbar au scroll */
+.navbar {
+    padding: 12px 40px;
+    transition: all 0.4s ease;
+    box-shadow: none;
+    background-color: var(--color);
+    
+}
+.navbar.scrolled{
+    background-color: white;
+    padding: 12px 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    
+}
+
+
+#back-to-top{
+    display: flex;
+   position: fixed;
+bottom: 30px;
+right: 30px;
+width: 45px;
+height: 50px;
+border: 1px solid var(--tertiary);
+border-radius: 50%;
+background: var(--tertiary);
+color: #ffff;
+font-size: 2rem;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+opacity: 0;
+
+}
+
+#back-to-top.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+#back-to-top i{
+    color:var(--color);
+}
+
+
+
 
 /* les titres du pages */
 h1,
@@ -48,6 +203,14 @@ h5 {
     background-size: cover;
     background-position: center;
     color: #ffffff;
+}
+/* dark mode */
+#darkmode{
+    width:40px;
+}
+#theme-toggle{
+    width: 5vw;
+    
 }
 
 .toute {
@@ -304,6 +467,7 @@ footer {
 
 footer img {
     width: 98px;
+    border-radius: 50%;
 }
 
 .annee {
@@ -312,7 +476,7 @@ footer img {
 
 .pied {
     display: flex;
-    gap: 9em;
+    gap: 10em;
     text-align: center;
 }
 
@@ -345,6 +509,9 @@ footer ul {
 .nav-link {
     color: #ffffff;
 }
+.nav-link.append {
+    color: #2a90f0;
+}
 
 /* logo */
 #logo {
@@ -358,9 +525,7 @@ footer ul {
     color: var(--color);
 }
 
-.navbar {
-    background-color: var(--color);
-}
+
 
 .navbar-toggler {
     background-color: #ffffff;
@@ -392,6 +557,7 @@ footer ul {
 .tor {
     background-color: var(--color);
     color: #ffffff;
+width: 100%;
 }
 
 .tor img {
@@ -407,12 +573,16 @@ footer ul {
 .ico {
     color: #ffffff;
 }
+.page-contact{
+    display: flex;
+}
 
 /* localisation  */
 .iframe {
     background-color: var(--color-principal);
     color: #ffffff;
     padding: 10px;
+    border-radius: 50%;
 }
 
 /* section freelance */
@@ -687,6 +857,8 @@ h6 {
 
 
 
+
+
 @media (min-width : 375px) and (max-width : 480px)  {
 
    
@@ -901,15 +1073,25 @@ h6 {
     margin-top: 7rem;
     gap: 2rem;
     padding: 15px;
+    
  }
  .contact-from-wrapper,
  .contact-info-wrapper{
-    width: 50%;
+    width: 100%;
+    
 
  }
+ .page-contact{
+    flex-direction: column;
+ }
 .iframe{
-    width: 100%;
+     width: 100%; 
     height: 250px;
+}
+
+
+
+
 }
 /* carte */
 .card-body{
@@ -918,7 +1100,6 @@ h6 {
 img{
     max-width: 100%;
     height: auto;
-}
 }
 
 
@@ -1081,6 +1262,11 @@ img{
         width: 100%;
         height: 350px;
      }
+     .pied{
+        flex-direction: column;
+        height: 19em;
+        width: 10em;
+     }
 }
 
 
@@ -1135,6 +1321,33 @@ img{
     margin-top: 30px;
     
 }
+
+.part-histoire{
+        flex-direction: row;
+        text-align: center;
+        gap: 30px;
+    }
+
+.tarifs .d-flex{
+    flex-direction: row;
+    align-items: center;
+    gap: 4em;
+    }
+
+    .position-absolute .badge{
+    font-size: 8rem !important;
+}
+/* footer */
+
+.pied{
+    gap: 8em;
+    
+}
+
+
+
+
+    
 
 
 
@@ -1290,6 +1503,4 @@ img{
     border: 4px solid #ffffff;
 
 }
-
-
 }
