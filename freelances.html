@@ -50,24 +50,26 @@ rel="stylesheet">
   <!-- barre de filtrage -->
    
   <div class="grille">
-    <select name="" id="">
-        <option value="">Tous</option>
-        <option value="">Développement</option>
-        <option value="">Design UI/UX</option>
-        <option value="">Marketing Digital</option>
-        <option value="">SEO Expert</option>
-        <option value="">Developpeur mobile</option>
-        <option value="">Graphiste</option>
-        <option value="">Développeuse front-end</option>
-        <option value="">Data Analyse</option>
-        <option value="">Monteur video</option>
-        
-    </select>
+    <div class="container-filtre">
+     <div class="filtrage-button">
+        <button class="filtrage active" data-name="Tous">Tous</button>
+        <button class="filtrage" data-name="Développement">Développement</button>
+        <button class="filtrage" data-name="Design UI/UX">Design UI/UX</button>
+        <button class="filtrage" data-name="Marketing Digital">Marketing Digital</button>
+        <button class="filtrage" data-name="SEO Expert">SEO Expert</button>
+        <button class="filtrage" data-name="Developpeur mobile">Developpeur mobile</button>
+        <button class="filtrage" data-name="Graphiste">Graphiste</button>
+        <button class="filtrage" data-name="Développeuse front-end">Développeuse front-end</button>
+        <button class="filtrage" data-name="Data Analyse">Data Analyse</button>
+        <button class="filtrage" data-name="Monteur video">Monteur video</button>
+    </div>
+    
+    </div>
    
     <!-- grille de profil -->
      
      <div class="row row-cols-1 row-cols-md-3  justify-content-center g-4 pt-5 mt-4" id="freelance" > 
-    <article class="card card-freelance" style="width: 18rem;" >
+    <article class="card card-freelance" style="width: 18rem;" data-name="Développement" >
         
             <img src="images/5.jpeg"  class="card-img-top"  alt="image">
         
@@ -89,7 +91,7 @@ rel="stylesheet">
              </div>
         
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance " style="width: 18rem;" data-name="Design UI/UX">
         
             <img src="images/6.jpeg"  class="card-img-top"  alt="image">
         
@@ -110,7 +112,7 @@ rel="stylesheet">
             <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance hide" style="width: 18rem;" data-name="Marketing Digital">
         
             <img src="images/7.jpeg"   class="card-img-top" alt="image">
         
@@ -131,7 +133,7 @@ rel="stylesheet">
             <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance " style="width: 18rem;" data-name="Developpeur mobile">
         
             <img src="images/8.jpeg" class="card-img-top" alt="image">
     
@@ -152,7 +154,7 @@ rel="stylesheet">
              <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance " style="width: 18rem;" data-name="Graphiste">
         
             <img src="images/9.jpeg" class="card-img-top" alt="image">
         
@@ -173,7 +175,7 @@ rel="stylesheet">
              <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance " style="width: 18rem;" data-name="SEO Expert">
         
             <img src="images/10.jpeg" class="card-img-top" alt="image">
         
@@ -194,7 +196,7 @@ rel="stylesheet">
             <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance " style="width: 18rem;" data-name="Développeuse front-end">
         
             <img src="images/11.jpeg" class="card-img-top" alt="image">
         
@@ -215,7 +217,7 @@ rel="stylesheet">
             <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
     </article>
-    <article class="card card-freelance" style="width: 18rem;">
+    <article class="card card-freelance " style="width: 18rem;" data-name="Data Analyse">
         
             <img src="images/12.jpeg" class="card-img-top"  alt="image">
         
@@ -236,7 +238,7 @@ rel="stylesheet">
             <a href="#" class="btn btn-primary">Voir profil</a>
         </div>
         </article>
-        <article class="card card-freelance" style="width: 18rem;">
+        <article class="card card-freelance hide" style="width: 18rem;" data-name="Monteur video">
         
             <img src="images/13.jpeg" class="card-img-top" alt="image">
         
