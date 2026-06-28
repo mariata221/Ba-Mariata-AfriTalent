@@ -613,8 +613,9 @@ width: 100%;
 .iframe {
     background-color: var(--color-principal);
     color: #ffffff;
-    padding: 10px;
+     padding: 100%; 
     border-radius: 50%;
+    
 }
 
 /* section freelance */
@@ -687,6 +688,7 @@ width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     border-radius: 6px;
     cursor: pointer;
+    color: #F8F9FA;
     
 }
 .active{
@@ -930,24 +932,7 @@ h3 {
             "grid4"
         ;
     }
-    
-}
-   /* RESPONSIVE TABLETTE ET LAPTOP */
-@media (min-width : 481px) and (max-width : 1024px) {
-
-    .bento-grid {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "grid1 grid2"
-            "grid3 grid4"
-        ;
-    }
-}
-          /* RESPONSIVE TELEPHONE */
-@media (max-width: 375px) {
-    /* navbar */
+/* navbar */
     .navbar-brand img {
         width: 50px;
     }
@@ -1035,11 +1020,15 @@ h3 {
         padding: 15px;
 
     }
-.filtrage-button{
+    .filtrage-button{
+        gap: 15px;
+    }
+
+.filtrage{
     /* width: 100%; */
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    
 }
     #freelance img{
         margin-left: 0;
@@ -1153,23 +1142,28 @@ h3 {
      width: 100%; 
     height: 250px;
 }
-
-
-
-
-}
 /* carte */
-.card-body{
+      .card-body{
     padding: 1rem;
 }
-img{
+     img{
     max-width: 100%;
     height: auto;
 }
+}
+
+
+    
+
+  
+
+         
+
+    
 
      /* RESPONSIVE TABLETTE */
 
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
     /* navbar */
     .navbar-nav{
         text-align: center;
@@ -1178,14 +1172,16 @@ img{
         margin-top: 15px;
         width: 250px;
     }
-    .navbar-toggler{
-        
+    .navbar-brand{
+        margin-left: 2rem;
     }
+    
       
        /* hero */
     .hero{
         height: auto;
         padding: 140px 30px 80px;
+        width: 100%;
     }
     .hero h1{
         font-size: 2.5rem;
@@ -1294,9 +1290,9 @@ img{
     .part-valeur{
         display: grid;
         grid-template-columns: repeat(2.1fr);
-        /* flex-wrap: wrap;
+        flex-wrap: wrap;
         justify-content: center;
-        text-align: center; */
+        text-align: center; 
         gap: 30px;
     }
     /* .part-valeur div{
@@ -1321,10 +1317,14 @@ img{
         grid-template-columns: 1fr;
         gap: 2rem;
         padding: 20px;
+       
+        
     }
      .contact-from-wrapper,
      .contact-info-wrapper{
         width: 100%;
+        
+        
      }
         /* localisation */
      .iframe{
@@ -1334,7 +1334,7 @@ img{
      .pied{
         flex-direction: column;
         height: 19em;
-        width: 10em;
+        width: 20em;
      }
 }
 
@@ -1409,7 +1409,7 @@ img{
 /* footer */
 
 .pied{
-    gap: 8em;
+    gap: 6em;
     
 }
 
@@ -1574,4 +1574,5 @@ img{
     border: 4px solid #ffffff;
 
 }
+
 }

@@ -169,7 +169,7 @@ form.addEventListener("submit",function(e) {
     isValid = false;
   }
 
-
+  //  REGEX
   const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (email.value.trim() === "") {
@@ -213,6 +213,3 @@ form.addEventListener("submit",function(e) {
 });
 
 
-const year = new Date().getFullYear();
-
-document.getElementById("year").textContent = year;
