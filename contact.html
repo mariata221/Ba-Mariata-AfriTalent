@@ -10,7 +10,7 @@
     <!-- Votre feuille de style personnelle -->
     <link rel="stylesheet" href="css/style1.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
@@ -20,14 +20,15 @@
 
     <!-- navigation bootstrap -->
     <header>
+        
         <nav class="navbar navbar-expand-lg  fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img id="logo" src="images/18.jpeg" alt="logo" width="70px"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    <a class="navbar-brand" href="#"><img id="logo" src="images/18.jpeg" alt="logo" width="70"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
@@ -46,60 +47,64 @@
                             <a class="nav-link " href="contact.html">Contact</a>
                         </li>
                     </ul>
-                    <button id="theme-toggle" class="btn btn-outline-light bg-transparent border-0" ><img id="darkmode" src="images/moon-regular (1).png" alt=""></button>
+                    <button id="theme-toggle" class="btn btn-outline-light bg-transparent border-0" ><img id="darkmode" src="images/moon-regular.png" alt="image"></button>
                     <button type="button" class="btn btn-primary btn-lg">Rejoindre AfriTalent</button>
                 </div>
             </div>
         </nav>
     </header>
     <main>
-
-        <section class="sectionContact">
-
-                <div class="contact-form-wrapper p-4 p-md-5 shadow-sm ">
-                    <h2 class="mb-4  text-center titrecontact ">CONTACTEZ-NOUS</h2>
-                    <div class="page-contact">
-
-                    <div id="success-message" class="alert alert-success p-3 mb-4 custom-success-box"
+                  <!-- FORMULAIRE -->
+<section class="sectionContact">
+                     <!-- WRAPPER DU FORMULAIRES -->  
+<div class="contact-form-wrapper p-4 p-md-5 shadow-sm ">
+                    <h1 class="mb-4  text-center titrecontact ">CONTACTEZ-NOUS</h1>
+<div class="page-contact">
+                              <!-- MESSAGE DE SUCCES -->
+                        <div id="success-message" class="alert alert-success p-3 mb-4 custom-success-box"
                         style="display:none;" role="alert">
                         <i class="bi bi-check-circle-fill me-2"></i>Message Envoyé avec succés.Nous vous répondrons dans
                         les plus bref délais.
-                    </div>
+                        </div>
                     
-             <div class="col-12 col-md-10 col-lg-6 mx-auto">
-              
-                    <form id="contactForm" novalidate>
+                        <div class="col-12 col-md-10 col-lg-6 mx-auto">
+                 
+                        <form id="contactForm" novalidate>
                         <div class="row mb-3 g-3">
-
-                            <div class="col-12 col-md-6">
-                                <label for="nom" class="form-label">Prenom</label>
+                            <!-- CHAMPS PRENOM -->
+                    <div class="col-12 col-md-6">
+                                <label for="prenom" class="form-label">Prenom</label>
                                 <input type="text" id="prenom" class="form-control" placeholder="Votre prenom">
+                                 <!-- MESSAGE D'ERREUR -->
                                 <span class="error-msg d-block text-danger mt-1 small" id="err-prenom"></span>
-                            </div>
+                    </div>
 
-
-                            <div class="col-12 col-md-6">
-                                <label for="prenom" class="form-label">Nom</label>
+                                  <!-- CHAMPS NOM -->
+                    <div class="col-12 col-md-6">
+                                <label for="nom" class="form-label">Nom</label>
                                 <input type="text" id="nom" class="form-control" placeholder="Votre nom">
+                                 <!-- MESSAGE D'ERREUR -->
                                 <span class="error-msg d-block text-danger mt-1 small" id="err-nom"></span>
-                            </div>
+                    </div>
 
-
-                            <div class="col-12">
+                                 <!-- CHAMPS EMAIL -->
+                    <div class="col-12">
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" id="email" class="form-control"
                                     placeholder="exemple@africaines.com">
+                                     <!-- MESSAGE D'ERREUR -->
                                 <span class="error-msg d-block text-danger mt-1 small" id="err-email"></span>
-                            </div>
-
-                            <div class="col-12">
+                    </div>
+                                 <!-- CHAMPS ADRESSE -->
+                    <div class="col-12">
                                 <label for="adresse" class="form-label">Adresse</label>
-                                <input type="adresse" id="adresse" class="form-control" placeholder="votre Adresse">
+                                <input type="text" id="adresse" class="form-control" placeholder="votre Adresse">
+                                 <!-- MESSAGE D'ERREUR -->
                                 <span class="error-msg d-block text-danger mt-1 small" id="err-adresse"></span>
-                            </div>
+                    </div>
+                                  <!-- CHAMPS SUJET -->
 
-
-                            <div class="col-12">
+                    <div class="col-12">
                                 <label for="sujet" class="form-label">Sujet</label>
                                 <select id="sujet" class="form-select">
                                     <option value="">-- Veuilez choisir un sujet --</option>
@@ -107,28 +112,31 @@
                                     <option value="Collaboration">Collaboration</option>
                                     <option value="Information">Information</option>
                                 </select>
+                                 <!-- MESSAGE D'ERREUR -->
                                 <span class="error-msg d-block text-danger mt-1 small" id="err-sujet"></span>
-                            </div>
+                    </div>
 
-
-                            <div class="col-12">
+                                   <!-- CHAMPS MESSAGE -->
+                    <div class="col-12">
                                 <label for="message" class="form-label">Message <span class="text-muted small">(min. 20
                                         caractères)</span></label>
                                 <textarea id="message" class="form-control" rows="5"
                                     placeholder="Écrivez votre message ici..."></textarea>
+                                    <!-- MESSAGE D'ERREUR -->
                                 <span class="error-msg d-block text-danger mt-1 small" id="err-message"></span>
-                            </div>
+                    </div>
 
-
-                            <div class="col-12 mt-4">
+                                    <!-- BOUTON ENVOYE -->
+                    <div class="col-12 mt-4">
                                 <button type="submit"
                                     class="btn btn-afri-submit py-3 w-100 fw-bold text-uppercase">Envoyer</button>
-                            </div>
-                        </div>
-                        </div>
+                    </div>
+                    </div>
+        
                     </form>
-
-<div class="col-12 col-lg-6">
+                    </div>
+                      <!-- COORDONNES -->
+           <div class="col-12 col-lg-6">
                 <div class="contact-info-wrapper h-100 p-4 p-md-5 text-black shadow-sm rounded-3">
                     <h2 class="mb-4  titrecontact">Nos Coordonnées</h2>
 
@@ -142,25 +150,19 @@
                     </div>
 
                 </div>
-                </div>
             </div>
-            </div>
+     </div>
+</div>
           
-            
-            
-
-                
-
-
-            
-            <div class="map-responsive-container shadow-sm">
+<div class="map-responsive-container shadow-sm">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d30871.730759906564!2d-17.48644109816561!3d14.714494861814329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sfreelance%20dakar!5e0!3m2!1sfr!2ssn!4v1776552934403!5m2!1sfr!2ssn"
-                            width="100%" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy"
+                            width="100" height="400" style="border:0; display: block;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    </div>
-        </section>
+</div>
+</section>
+</main>
         <!-- footer -->
         <footer class="tor">
             <div class="pied">
@@ -169,7 +171,7 @@
                     <p>Plateforme de freelance africain.</p>
                 </div>
                 <div>
-                    <h4>Liens utiles</h4>
+                    <h2>Liens utiles</h2>
                     <ul>
                         <li><a href="index.html">Acceuil</a></li>
                         <li><a href="freelances.html">Freelances</a></li>
@@ -179,7 +181,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h4>Ressources</h4>
+                    <h2>Ressources</h2>
                     <aside>
                         <p>Guide freelance</p>
                     </aside>
@@ -191,7 +193,7 @@
                     </aside>
                 </div>
                 <div>
-                    <h4>Contact</h4>
+                    <h2>Contact</h2>
                     <a href="contact.html">Contact@afriTalent</a>
                     <p><i class="fa-solid fa-phone fa-xs" style="color: rgb(232, 19, 19);"></i>Tél:+221 77 255 63 73</p>
                     <p><i class="fa-solid fa-map-pin fa-xs" style="color: rgb(232, 19, 19);"></i>Dakar,Sénégal</p>
@@ -217,13 +219,14 @@
             </div>
             <hr>
             <div class="annee">
-                ©AfriTalent-copyright-AfriTalent
+                <p><span id="year"></span>©AfriTalent-copyright-AfriTalent</p>
             </div>
             <div>
                                      <button id="back-to-top">
   
    <i class="fa-solid fa-arrow-up-long"></i>
 </button>
+</div>
 
             
         </footer>

@@ -1,23 +1,27 @@
+/* RESET  */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+  /* VARIABLE ROOT */
 :root {
-
+       /* POLICE POUR LE CORPS DU TEXTE */
     --font-corp: roboto, sans-serif;
+    /* POLICE DES TITRES */
     --font-titre: Poppins, sans-serif;
-
+     /* FONT CLAIR PAR DEFAUT */
     --color-principal: #F8F9FA;
+    /* COULEUR TEXTE */
     --color-texte: #090b0c;
+    /* COULEUR SECONDAIRE */
     --color: #2a90f0;
-
+        /* SPACEMENT DE BASE */
     --space: 16px;
 }
 
 
-/* le corps */
+/* le CORPS DU PAGE */
 body {
     font-family: var(--font-corp);
     font-optical-sizing: auto;
@@ -29,9 +33,18 @@ body {
 }
 
 
-/* dark mode */
+/* DARK MODE */
+/* ICONE LUNE DU DARK MODE */
+#darkmode{
+    width:40px;
+}
+ /* LARGEUR DU BOUTONS DARK MODE */
+#theme-toggle{
+    width: 5vw;
+    
+}
 
-
+ /* FOND ET TEXTE EN DARK MODE */
 body.dark{
     background: #1e1e1e;
     color: white    ;
@@ -39,25 +52,31 @@ body.dark{
     --secondcolor:black;
 
 }
+ /* NAVBAR AU DARK MODE */
 
 body.dark .navbar{
     background: var(--colorprimary);
     color: #181717;
 }
+ /* CARTE AU DARK MODE */
 body.dark .card{
     background:var(--colorprimary);
     color: white;
 }
+/* SECTION CATEGORIES EN DARK MODE */
 body.dark .categories{
     background: var(--secondcolor);
 }
+/* CORPS DU DARK MODE */
 
 body.dark .body{
     background-color: #181717;
 }
+/* SECTION DE LA PAGES A PROPOS  EN DARK MODE */
 body.dark .histoire{
     background:#1a1818;
 }
+
 body.dark .equipe{
 background:#1a1818;
 }
@@ -67,6 +86,7 @@ body.dark .valeurs{
 body.dark .chiffres{
     background:#1a1818;
 }
+/* GRILLE BENTO GRID DE LA PAGE A PROPOS EN DARK MODE */
 body.dark .grille1{
     background: var(--colorprimary);
     color: white;
@@ -87,17 +107,21 @@ body.dark .grille5{
     background:var(--colorprimary);
     color: white;
 }
+/* LIENS DU FOOTER EN DARK MODE */
 body.dark .pied a{
     color: white;
 }
+/* SECTION COMMENT CA MARCHE EN DARK MODE */
 body.dark .marche{
     background: var(--secondcolor);
     color: white;
 }
+/* SECTION CTA */
 body.dark .CTA{
     background: var(--secondcolor);
     color: white;
 }
+/* SECTION HERO */
 body.dark .hero{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/60.jpeg);
     height: 950px;
@@ -106,13 +130,16 @@ body.dark .hero{
     background-size: cover;
     background-position: center;
 }
+/* GRILLE FREELANCE */
 body.dark .grille{
     background: #1a1818;
 }
+/* FOOTER COLORE */
 body.dark .tor{
     background: var(--secondcolor);
 
 }
+/* PAGES TARIF ET FAQ EN DARK MODE */
 body.dark .tarifs{
     background: #1a1818;
 }
@@ -132,9 +159,21 @@ body.dark .pied{
 }
 body.dark .prix{
     color: white;
-}body.dark .contact-details-list{
+}
+/* COORDONNES EN DARK MODE */
+body.dark .contact-details-list{
     color: white;
 }
+body.dark .active{
+    background-color:  #1e1e1e;
+    color: white;
+}
+body.dark .carrousel-item-start{
+    background-color: #1e1e1e;
+}
+
+
+
 /* navbar au scroll */
 .navbar {
     padding: 12px 40px;
@@ -150,7 +189,7 @@ body.dark .prix{
     
 }
 
-
+/* BOUTON RETOURS EN HAUT */
 #back-to-top{
     display: flex;
    position: fixed;
@@ -169,15 +208,15 @@ cursor: pointer;
 opacity: 0;
 
 }
-
 #back-to-top.show{
     opacity: 1;
     visibility: visible;
 }
-
+/* COULEUR DU BOUTON RETOUR EN HAUT */
 #back-to-top i{
     color:var(--color);
 }
+/* FADE-IN */
 .fade-in{
     opacity: 0;
     transform: translateY(30px);
@@ -196,7 +235,7 @@ opacity: 0;
 h1,
 h2,
 h4,
-h5 {
+h5,h3 {
     font-family: var(--font-titre);
     font-style: var(--style);
 }
@@ -214,15 +253,6 @@ h5 {
     background-position: center;
     color: #ffffff;
 }
-/* dark mode */
-#darkmode{
-    width:40px;
-}
-#theme-toggle{
-    width: 5vw;
-    
-}
-
 .toute {
     margin-top: 1em;
 }
@@ -234,6 +264,7 @@ h5 {
     text-align: center;
 
 }
+/* ICON AU SECTION HERO */
 
 .fa-users,
 .fa-briefcase,
@@ -250,6 +281,7 @@ h5 {
 h3 {
     margin-top: 20px;
 }
+/* BOUTON CTA */
 
 #btn4 {
     text-decoration: none;
@@ -365,17 +397,7 @@ h3 {
     color: #ffffff;
 }
 
-/* #grid4 {
-    grid-column: span 3;
-}
 
-#grid2 {
-    grid-column: span 2;
-}
-
-#grid3 {
-    grid-column: span 3;
-} */
 
 /* sectio temoignage */
 .temoin {
@@ -509,7 +531,7 @@ footer ul {
 
 }
 
-/* liens */
+/* liens NAVBAR */
 
 .collapse {
     justify-content: flex-end;
@@ -603,11 +625,11 @@ width: 100%;
     padding: 30px;
 
 }
-
-.grille select {
-    background-color: #2a90f0;
-    color: #ffffff;
+.card-freelance h2{
+    font-size: 1.5em;
 }
+
+
 
 .card-freelance {
 
@@ -655,6 +677,7 @@ width: 100%;
     margin: 50px 20px;
     
 }
+/* BOUTON DE FILTRAGE */
 
 .filtrage{
     padding: 10px 20px;
@@ -678,7 +701,7 @@ width: 100%;
 
 }
 
-.histoire h2 {
+.histoire h1 {
     text-align: center;
     padding: 10px;
     color: var(--color);
@@ -697,10 +720,7 @@ width: 100%;
     border-radius: 50% 10% 50% 10%;
     border: 3px solid var(--color);
 }
-@keyframes img {
-    
-    
-}
+
 
 .part-histoire p {
     margin-top: 7em;
@@ -721,6 +741,9 @@ width: 100%;
 .equipe h2 {
     text-align: center;
     padding: 10px;
+}
+.card-img-top{
+    border-radius: 50% 10% 50% 10%;
 }
 
 /* sections valeurs */
@@ -878,7 +901,7 @@ width: 100%;
 }
 
 .question h2,
-h6 {
+h3 {
     text-align: center;
     margin-top: 20px;
 }
@@ -890,7 +913,7 @@ h6 {
 
 
 
-
+ /* RESPONSIVE TELEPHONE */
 
 @media (min-width : 375px) and (max-width : 480px)  {
 
@@ -909,7 +932,7 @@ h6 {
     }
     
 }
-
+   /* RESPONSIVE TABLETTE ET LAPTOP */
 @media (min-width : 481px) and (max-width : 1024px) {
 
     .bento-grid {
@@ -922,6 +945,7 @@ h6 {
         ;
     }
 }
+          /* RESPONSIVE TELEPHONE */
 @media (max-width: 375px) {
     /* navbar */
     .navbar-brand img {
@@ -1143,7 +1167,7 @@ img{
     height: auto;
 }
 
-
+     /* RESPONSIVE TABLETTE */
 
 @media (min-width: 768px) {
     /* navbar */
@@ -1153,6 +1177,9 @@ img{
     .navbar .btn{
         margin-top: 15px;
         width: 250px;
+    }
+    .navbar-toggler{
+        
     }
       
        /* hero */
@@ -1311,7 +1338,7 @@ img{
      }
 }
 
-
+ /* RESPONSIVE DESKTOP LARGE */
 
  @media (min-width: 1200px) {
     .categories {
@@ -1458,6 +1485,7 @@ img{
 
 
 }
+/*  GRILLE CHIFFRES CLES */
 
 .grille1 {
     grid-column: span 2;
@@ -1536,6 +1564,7 @@ img{
 
 
 }
+/* GRILLE FREELANCE */
 
 #freelance img {
     margin-left: 2.75rem;

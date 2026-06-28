@@ -44,7 +44,7 @@ window.addEventListener('scroll', () => {
     })
   }
 })
-
+// BOUTONS RETOURS EN HAUT
 const backToTop = document.getElementById('back-to-top');
 window.addEventListener('scroll',() => {
     if (window.scrollY >300) {
@@ -125,7 +125,7 @@ filterbuttons.forEach(button => {
     })
   })
 })
-
+// VALIDATION DU FORMULAIRE
 console.log("Le script fonctionne")
 const form = document.getElementById("contactForm");
 
@@ -211,3 +211,8 @@ form.addEventListener("submit",function(e) {
     
   }
 });
+
+
+const year = new Date().getFullYear();
+
+document.getElementById("year").textContent = year;
